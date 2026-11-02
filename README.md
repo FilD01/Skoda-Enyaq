@@ -13,3 +13,9 @@ Contributions are welcome! If you would like to add support for additional model
 ## Issues
 
 If you encounter any issues or would like to discuss improvements, please feel free to open an issue. We encourage collaboration and appreciate feedback to make the repository as accurate and useful as possible.
+
+## Provenance
+
+The initial signal set (battery pack voltage, charge current limit, minimum pack temperature, BMS state of charge and car mode) was measured on a single 2021 Škoda Enyaq Sportline 80 during a DC charging session on 2026-11-02. Other MEB cars and model years are untested. Formulas were cross-checked against the OBDb Volkswagen ID.4 and Audi Q4 e-tron signal sets (CC-BY-SA-4.0).
+
+Known open points: the bit meaning of `ENYAQ_CAR_MODE` (DC charging read as `06`) and whether `ENYAQ_SOC_BMS` equals the dashboard state of charge.

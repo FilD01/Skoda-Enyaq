@@ -1,4 +1,143 @@
-{ "commands": [
-
-]
+{
+  "ecu": [
+    {
+      "hdr": "FC00",
+      "type": "battery"
+    }
+  ],
+  "commands": [
+    {
+      "hdr": "FC00",
+      "rax": "FE007B",
+      "pri": "17",
+      "tst": "7B",
+      "cmd": {
+        "22": "7448"
+      },
+      "freq": 1,
+      "signals": [
+        {
+          "id": "ENYAQ_CAR_MODE",
+          "path": "Battery.Charging",
+          "fmt": {
+            "len": 8,
+            "unit": "scalar",
+            "min": 0,
+            "max": 255
+          },
+          "name": "Car operation mode"
+        }
+      ]
+    },
+    {
+      "hdr": "FC00",
+      "rax": "FE007B",
+      "pri": "17",
+      "tst": "7B",
+      "cmd": {
+        "22": "1E1B"
+      },
+      "freq": 0.5,
+      "signals": [
+        {
+          "id": "ENYAQ_HVBAT_CHARGE_CURRENT_LIMIT",
+          "path": "Battery.Charging",
+          "fmt": {
+            "len": 16,
+            "unit": "amps",
+            "min": 0,
+            "max": 13107,
+            "div": 5
+          },
+          "name": "High voltage battery, dynamic charge current limit"
+        }
+      ]
+    },
+    {
+      "hdr": "FC00",
+      "rax": "FE007B",
+      "pri": "17",
+      "tst": "7B",
+      "cmd": {
+        "22": "1E3B"
+      },
+      "freq": 1,
+      "signals": [
+        {
+          "id": "ENYAQ_HVBAT_VOLTAGE",
+          "path": "Battery",
+          "fmt": {
+            "len": 16,
+            "unit": "volts",
+            "min": 0,
+            "max": 16383.75,
+            "div": 4
+          },
+          "name": "High voltage battery, voltage",
+          "suggestedMetric": "tractionBatteryVoltage"
+        }
+      ]
+    },
+    {
+      "hdr": "FC00",
+      "rax": "FE007B",
+      "pri": "17",
+      "tst": "7B",
+      "cmd": {
+        "22": "1E0F"
+      },
+      "freq": 0.25,
+      "signals": [
+        {
+          "id": "ENYAQ_HVBAT_TEMP_MIN",
+          "path": "Battery",
+          "fmt": {
+            "len": 16,
+            "unit": "celsius",
+            "min": -512,
+            "max": 511,
+            "div": 64,
+            "sign": true
+          },
+          "name": "High voltage battery, coldest temperature"
+        },
+        {
+          "id": "ENYAQ_HVBAT_TEMP_MIN_ID",
+          "path": "Battery",
+          "fmt": {
+            "bix": 16,
+            "len": 16,
+            "unit": "scalar",
+            "min": 0,
+            "max": 65535
+          },
+          "name": "High voltage battery, coldest temperature sensor ID"
+        }
+      ]
+    },
+    {
+      "hdr": "FC00",
+      "rax": "FE007B",
+      "pri": "17",
+      "tst": "7B",
+      "cmd": {
+        "22": "028C"
+      },
+      "freq": 1,
+      "signals": [
+        {
+          "id": "ENYAQ_SOC_BMS",
+          "path": "Battery",
+          "fmt": {
+            "len": 8,
+            "unit": "percent",
+            "min": 0,
+            "max": 102,
+            "div": 2.5
+          },
+          "name": "High voltage battery, state of charge (BMS internal)"
+        }
+      ]
+    }
+  ]
 }

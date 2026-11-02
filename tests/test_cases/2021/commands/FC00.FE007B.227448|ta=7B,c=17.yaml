@@ -1,0 +1,5 @@
+command_id: FC00.FE007B.227448|ta=7B,c=17
+test_cases:
+- expected_values:
+    ENYAQ_CAR_MODE: 6
+  response: 17FE007B0462744806

@@ -1,0 +1,6 @@
+command_id: FC00.FE007B.221E0F|ta=7B,c=17
+test_cases:
+- expected_values:
+    ENYAQ_HVBAT_TEMP_MIN: 25.5
+    ENYAQ_HVBAT_TEMP_MIN_ID: 5
+  response: 17FE007B07621E0F06600005
