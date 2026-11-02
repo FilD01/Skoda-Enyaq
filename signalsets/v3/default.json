@@ -157,6 +157,18 @@
       },
       "signals": [
         {
+          "id": "ENYAQ_HV_EM_PWR_LIMITATION",
+          "path": "Engine",
+          "fmt": {
+            "bix": 8,
+            "len": 16,
+            "max": 3276750,
+            "mul": 50,
+            "unit": "watts"
+          },
+          "name": "Electric motor power limitation"
+        },
+        {
           "id": "ENYAQ_HV_EM_NV_PWR_LIMITATION",
           "path": "Engine",
           "fmt": {
