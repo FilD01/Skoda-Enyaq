@@ -139,7 +139,8 @@
             "max": 102,
             "div": 2.5
           },
-          "name": "High voltage battery, state of charge (BMS internal)"
+          "name": "High voltage battery, state of charge (BMS internal)",
+          "suggestedMetric": "stateOfCharge"
         }
       ]
     },
@@ -256,7 +257,8 @@
             "div": 10,
             "unit": "volts"
           },
-          "name": "DC-DC converter, low voltage"
+          "name": "DC-DC converter, low voltage",
+          "suggestedMetric": "starterBatteryVoltage"
         },
         {
           "id": "ENYAQ_DCDC_I",
@@ -310,7 +312,8 @@
             "nullmax": 327.4,
             "unit": "kilowattHours"
           },
-          "name": "HV battery, max energy"
+          "name": "HV battery, max energy",
+          "suggestedMetric": "tractionBatteryCapacity"
         }
       ]
     },
@@ -336,7 +339,8 @@
             "max": 65535,
             "unit": "kilometers"
           },
-          "name": "Estimated electric power reserve"
+          "name": "Estimated electric power reserve",
+          "suggestedMetric": "electricRange"
         },
         {
           "id": "ENYAQ_HVBAT_CSMP_AVG_INT",
@@ -373,7 +377,8 @@
             "max": 65535,
             "unit": "kilometers"
           },
-          "name": "Estimated reserve range"
+          "name": "Estimated reserve range",
+          "suggestedMetric": "electricRange"
         }
       ]
     },
@@ -688,7 +693,8 @@
             "div": 10,
             "unit": "amps"
           },
-          "name": "On-board charger, hv/dc current"
+          "name": "On-board charger, hv/dc current",
+          "suggestedMetric": "tractionBatteryCurrent"
         }
       ]
     },
@@ -1797,7 +1803,8 @@
             "sign": true,
             "unit": "amps"
           },
-          "name": "Battery current, motor controller"
+          "name": "Battery current, motor controller",
+          "suggestedMetric": "tractionBatteryCurrent"
         }
       ]
     },
@@ -2135,7 +2142,8 @@
             "sign": true,
             "unit": "volts"
           },
-          "name": "Battery voltage, traction mode"
+          "name": "Battery voltage, traction mode",
+          "suggestedMetric": "tractionBatteryVoltage"
         }
       ]
     },
@@ -2161,7 +2169,8 @@
             "max": 16777215,
             "unit": "kilometers"
           },
-          "name": "Odometer, BMS"
+          "name": "Odometer, BMS",
+          "suggestedMetric": "odometer"
         }
       ]
     },
@@ -2908,7 +2917,8 @@
             "sign": true,
             "unit": "volts"
           },
-          "name": "Battery voltage, after main switch"
+          "name": "Battery voltage, after main switch",
+          "suggestedMetric": "tractionBatteryVoltage"
         }
       ]
     },
@@ -2967,7 +2977,8 @@
             "sign": true,
             "unit": "volts"
           },
-          "name": "Battery voltage, sum of all cells"
+          "name": "Battery voltage, sum of all cells",
+          "suggestedMetric": "tractionBatteryVoltage"
         }
       ]
     },
@@ -2996,7 +3007,8 @@
             "add": -1500,
             "unit": "amps"
           },
-          "name": "Battery current, DC (alt)"
+          "name": "Battery current, DC (alt)",
+          "suggestedMetric": "tractionBatteryCurrent"
         }
       ]
     },
@@ -7529,7 +7541,8 @@
             "div": 512,
             "unit": "volts"
           },
-          "name": "DC-DC voltage"
+          "name": "DC-DC voltage",
+          "suggestedMetric": "starterBatteryVoltage"
         }
       ]
     }
